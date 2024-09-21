@@ -1,0 +1,129 @@
+/* Style the header */
+header {
+    background-color: rgba(253, 244, 244, 0.8); /* Slight transparency */
+    color: rgb(244, 232, 232);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: rgb(11, 1, 1);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #0a0c0c;
+}
+
+body {
+    margin: 0;
+    padding-top: 70px; /* Prevent content from hiding behind the fixed header */
+    font-family: Arial, sans-serif;
+    background-image: url('/Ai.jpeg'); /* Background image */
+    background-size: cover; /* Ensure the background covers the full screen */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the image while scrolling */
+    background-repeat: no-repeat; /* Prevent repetition */
+    color: rgb(235, 228, 228);
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: #010506;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #008fb3;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 249, 249, 0.8);
+    color: rgb(17, 1, 1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
